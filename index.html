@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Candy Match!</title>
+
+        <link rel="icon" href="./images/Candy_Match_Logo.png" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./main.css" />
+
+        <!-- JS -->
+        <script src="./main.js"></script>
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- FONT AWSOME -->
+        <script
+            src="https://kit.fontawesome.com/7c9ea7a634.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="modal">
+            <div id="background-effect"></div>
+            <div id="modal-container">
+                <h2>Choose your player candy!</h2>
+                <div id="pick-candy">
+                    <div id="player-one">
+                        <img
+                            src="./images/Chocolate_2.png"
+                            alt="Player One, Chocolate"
+                        />
+                    </div>
+                    <div id="player-two">
+                        <img
+                            src="./images/Yelly_2.png"
+                            alt="Player Two, Yelly"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="back-button-wrapper">
+            <button id="back-button"><i class="fas fa-arrow-left"></i></button>
+        </div>
+
+        <main>
+            <div id="player-one-score-wrapper">
+                <div class="img-wrapper">
+                    <img src="./images/Chocolate_2.png" alt="Chocolate Score" />
+                </div>
+                <span id="player-one-score"></span>
+            </div>
+
+            <div id="board-wrapper">
+                <div id="board">
+                    <div id="top-left"></div>
+                    <div id="top"></div>
+                    <div id="top-right"></div>
+                    <div id="middle-left"></div>
+                    <div id="middle"></div>
+                    <div id="middle-right"></div>
+                    <div id="bottom-left"></div>
+                    <div id="bottom"></div>
+                    <div id="bottom-right"></div>
+                </div>
+
+                <div id="info">
+                    <h3 id="player"></h3>
+                    <div>
+                        <button id="reset"><p>Reset Score</p></button>
+                        <button id="restart"><p>New Game</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="player-two-score-wrapper">
+                <div class="img-wrapper">
+                    <img src="./images/Yelly_2.png" alt="Yelly Score" />
+                </div>
+                <span id="player-two-score"></span>
+            </div>
+        </main>
+    </body>
+</html>
